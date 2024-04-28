@@ -49,7 +49,7 @@ const SyncthingMenu = new GObject.registerClass(
 
         _initButton() {
             let box = new St.BoxLayout();
-            this.add_actor(box);
+            this.add_child(box);
 
             this._syncthingIcon = new St.Icon({ gicon: this._getSyncthingIcon(),
                 style_class: "system-status-icon" });
